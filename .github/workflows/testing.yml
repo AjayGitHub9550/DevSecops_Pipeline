@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  image_push:
+  test:
     runs-on: java_build
     steps:
       - name: Testing the runner
