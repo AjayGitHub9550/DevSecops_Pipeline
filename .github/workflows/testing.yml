@@ -1,4 +1,5 @@
 name: Testing the runner
+
 on:
   workflow_dispatch:
 
@@ -6,5 +7,5 @@ jobs:
   image_push:
     runs-on: java_build
     steps:
-      - name: echo "Testing the runner"
+      - name: Testing the runner
         run: echo "Testing the runner"
