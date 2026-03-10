@@ -10,4 +10,4 @@ jobs:
     #needs: build  # Ensures Sonar runs after build succeeds
     steps:
       - name: SonarCloud Scan
-        run: mvn sonar:sonar -Dsonar.projectKey=AjayGitHub9550_DevSecops_Pipeline -Dsonar.organization=ajaygithub9550 -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=370fa246d5a53599a3e902af4914ce68779edced
+        run: mvn sonar:sonar -Dsonar.projectKey=AjayGitHub9550_DevSecops_Pipeline -Dsonar.organization=ajaygithub9550 -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{ secrets.SONAR_TOKEN }}
